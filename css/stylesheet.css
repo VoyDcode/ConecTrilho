@@ -24,12 +24,12 @@ header {
 }
 
 .logo {
-    width: 40px;
+    width: 50px;
     height: 40px;
 }
 
 .logo img {
-    width: 100%;
+    width: 150%;
     height: 100%;
     object-fit: contain;
 }
@@ -44,20 +44,20 @@ nav a {
     color: white;
     text-decoration: underline;
     font-size: 0.9rem;
-    text-transform: uppercase;
 }
 
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 2rem;
     position: relative;
     z-index: 1;
+    padding-left: 2rem; 
+
 }
 
-.background-image {
+.background-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,21 +65,26 @@ main {
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    margin-top: 3rem;
 }
 
 h1 {
+    justify-content: left;
     color: white;
-    font-size: 2.5rem;
+    font-size: 5rem;
     margin-bottom: 3rem;
     font-weight: bold;
+    align-self: flex-start;
+    margin-top: 4rem;
 }
 
 .login-form {
-    background-color: rgba(120, 0, 0, 0.4);
+    background-color: #78000066;
     padding: 2rem;
     border-radius: 8px;
     width: 100%;
     max-width: 400px;
+    margin-top: 8rem;
 }
 
 .form-group {
@@ -87,7 +92,7 @@ h1 {
     position: relative;
 }
 
-.form-icon {
+.icon-login-interface {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -112,7 +117,7 @@ h1 {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.submit-btn {
+.submit-button {
     width: 100%;
     padding: 0.8rem;
     background-color: #333333;
@@ -123,6 +128,6 @@ h1 {
     margin-top: 0.5rem;
 }
 
-.submit-btn:hover {
+.submit-button:hover {
     background-color: #444444;
 }
